@@ -9,31 +9,31 @@ $(function() {
 	}
 	audioAutoPlay('musicStar');*/
 	//音乐
-	var pauseMark = true;
-	$(".music_btn").click(function() {
-		if(pauseMark) {
-			pauseMark = false;
-			$(this).children('img').attr('src', 'images/music_off.png');
-			$(this).removeClass('music_on');
-			$("#music")[0].pause();
-		} else {
-			$(this).children('img').attr('src', 'images/music_on.png');
-			$(this).addClass('music_on');
-			$("#music")[0].play();
-			pauseMark = true;
-		}
-	});
-
-	function audioAutoPlay(id) {
-		var audio = document.getElementById(id);
-		audio.play();
-		document.addEventListener("WeixinJSBridgeReady", function() {
-			if(pauseMark) {
-				audio.play();
-			}
-		}, false);
-	}
-	audioAutoPlay('music');
+//	var pauseMark = true;
+//	$(".music_btn").click(function() {
+//		if(pauseMark) {
+//			pauseMark = false;
+//			$(this).children('img').attr('src', 'images/music_off.png');
+//			$(this).removeClass('music_on');
+//			$("#music")[0].pause();
+//		} else {
+//			$(this).children('img').attr('src', 'images/music_on.png');
+//			$(this).addClass('music_on');
+//			$("#music")[0].play();
+//			pauseMark = true;
+//		}
+//	});
+//
+//	function audioAutoPlay(id) {
+//		var audio = document.getElementById(id);
+//		audio.play();
+//		document.addEventListener("WeixinJSBridgeReady", function() {
+//			if(pauseMark) {
+//				audio.play();
+//			}
+//		}, false);
+//	}
+//	audioAutoPlay('music');
 	
 	//loading页面加载结束
 	$('.loading').on('animationend', function() {

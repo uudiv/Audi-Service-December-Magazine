@@ -4,8 +4,38 @@ body {
     height: 100%;
 }
 
+@font-face {
+    font-family: "audiText";
+    src: url('../fonts/DFPHeiW5-GB.TTF') format('truetype');
+}
+
+@font-face {
+    font-family: "audiTextBlod";
+    src: url('../fonts/DFPHeiW9-GB.TTF') format('truetype');
+}
+
+@font-face {
+    font-family: "audiTextENormal";
+    src: url('../fonts/AudiTypeV01-Normal.otf') format('truetype');
+}
+
+@font-face {
+    font-family: "audiTextEBlod";
+    src: url('../fonts/AudiTypeV01-Bold.otf') format('truetype');
+}
+
+@font-face {
+    font-family: "audiTextEXTENDEDBOLD";
+    src: url('../fonts/AudiTypeV01-EXTENDEDBOLD.otf') format('truetype');
+}
+
 body {
     background-color: #fff;
+    font-family: "audiTextENormal", "audiText", "microsoft yahei",sans-serif;
+    font-size: 0.24rem;
+    line-height: 0.4rem;
+    text-align: justify;
+    color: #000;
 }
 
 ul,
@@ -15,6 +45,7 @@ ol {
 
 img {
     display: block;
+    width: 100%;
 }
 
 

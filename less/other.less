@@ -16,3 +16,27 @@
     }
 }
 
+
+.swiper-button-prev,
+.swiper-button-next {
+    opacity: 0.5;
+    height: 27px;
+    animation: swiper-button-prev 1s linear infinite alternate;
+}
+
+.swiper-button-next {
+    right: 5px;
+}
+
+.swiper-button-prev {
+    left: 5px;
+}
+
+@keyframes swiper-button-prev {
+    from {
+        opacity: 0.5;
+    }
+    to {
+        opacity: 0;
+    }
+}

@@ -1,41 +1,74 @@
-@font-face {
-    font-family: "audiText";
-    src: url('../fonts/DFPHeiW5-GB.TTF') format('truetype');
+.screen1 {
+    .tu1 {
+        width: 100%;
+    }
+    .tu2 {
+        width: 100%;
+        position: absolute;
+        top: 113rem/@baseFontSize;
+        left: 0;
+    }
+    .tu3 {
+        width: 100%;
+        position: absolute;
+        top: 330rem/@baseFontSize;
+        left: 0;
+    }
+    .tu4 {
+        width: 108rem/@baseFontSize;
+        position: absolute;
+        top: 820rem/@baseFontSize;
+        left: 268rem/@baseFontSize;
+        animation: loadOut 1s linear 5 alternate forwards;
+    }
+    .fh {
+        width: 60rem/@baseFontSize;
+        position: absolute;
+        top: 1044rem/@baseFontSize;
+        right: 30rem/@baseFontSize;
+    }
+    .fhdl {
+        font-family: "audiText";
+        position: absolute;
+        top: 1055rem/@baseFontSize;
+        right: 100rem/@baseFontSize;
+        color: #fff;
+        font-size: 18rem/@baseFontSize;
+        animation: loadOut 1s linear 5 alternate forwards;
+    }
 }
 
-@font-face {
-    font-family: "audiTextBlod";
-    src: url('../fonts/DFPHeiW9-GB.TTF') format('truetype');
+
+/*------------------------------*/
+
+.screen2 {
+    background-color: #d00e31;
+    .bg_color {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        background-color: #b1b6b8;
+        width: 100%;
+        height: 870rem/@baseFontSize;
+    }
+    .tu {
+        width: 100%;
+        .tu1 {
+            margin-top: 76rem/@baseFontSize;
+        }
+        .tu2 {
+            margin-top: 255rem/@baseFontSize;
+        }
+        .tu3 {
+            margin-top: 46rem/@baseFontSize;
+        }
+        .tu4 {
+            
+        }
+    }
 }
 
-@font-face {
-    font-family: "audiTextENormal";
-    src: url('../fonts/AudiTypeV01-Normal.otf') format('truetype');
-}
-
-@font-face {
-    font-family: "audiTextEBlod";
-    src: url('../fonts/AudiTypeV01-Bold.otf') format('truetype');
-}
-
-@font-face {
-    font-family: "audiTextEXTENDEDBOLD";
-    src: url('../fonts/AudiTypeV01-EXTENDEDBOLD.otf') format('truetype');
-}
-
-body {
-    background-color: #fff;
-    font-family: "audiTextENormal", "audiText", "microsoft yahei",sans-serif;
-    font-size: 0.24rem;
-    line-height: 0.4rem;
-    text-align: justify;
-    color: #000;
-}
-
-/*------------------------------*/
-
-.screen1 {}
-
 
 /*------------------------------*/
 
@@ -123,8 +156,6 @@ body {
 
 /*------------------------------*/
 
-
-/*------------------------------*/
 
 /*加载动画*/
 
