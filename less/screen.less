@@ -1,0 +1,392 @@
+@font-face {
+    font-family: "audiText";
+    src: url('../fonts/DFPHeiW5-GB.TTF') format('truetype');
+}
+
+@font-face {
+    font-family: "audiTextBlod";
+    src: url('../fonts/DFPHeiW9-GB.TTF') format('truetype');
+}
+
+@font-face {
+    font-family: "audiTextENormal";
+    src: url('../fonts/AudiTypeV01-Normal.otf') format('truetype');
+}
+
+@font-face {
+    font-family: "audiTextEBlod";
+    src: url('../fonts/AudiTypeV01-Bold.otf') format('truetype');
+}
+
+@font-face {
+    font-family: "audiTextEXTENDEDBOLD";
+    src: url('../fonts/AudiTypeV01-EXTENDEDBOLD.otf') format('truetype');
+}
+
+body {
+    background-color: #fff;
+    font-family: "audiTextENormal", "audiText", "microsoft yahei",sans-serif;
+    font-size: 0.24rem;
+    line-height: 0.4rem;
+    text-align: justify;
+    color: #000;
+}
+
+/*------------------------------*/
+
+.screen1 {}
+
+
+/*------------------------------*/
+
+
+/*------------------------------*/
+
+
+/*------------------------------*/
+
+
+/*------------------------------*/
+
+
+/*------------------------------*/
+
+
+/*------------------------------*/
+
+
+/*------------------------------*/
+
+
+/*------------------------------*/
+
+
+/*------------------------------*/
+
+
+/*------------------------------*/
+
+
+/*------------------------------*/
+
+
+/*------------------------------*/
+
+
+/*------------------------------*/
+
+
+/*------------------------------*/
+
+
+/*------------------------------*/
+
+
+/*------------------------------*/
+
+
+/*------------------------------*/
+
+
+/*------------------------------*/
+
+
+/*------------------------------*/
+
+
+/*------------------------------*/
+
+
+/*------------------------------*/
+
+
+/*------------------------------*/
+
+
+/*------------------------------*/
+
+
+/*------------------------------*/
+
+
+/*------------------------------*/
+
+
+/*------------------------------*/
+
+
+/*------------------------------*/
+
+
+/*------------------------------*/
+
+
+/*------------------------------*/
+
+
+/*------------------------------*/
+
+/*加载动画*/
+
+.loading {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: 99999999999999;
+    -webkit-animation: loadOut 1s linear forwards;
+    animation: loadOut 1s linear forwards;
+    -webkit-animation-delay: 7s;
+    animation-delay: 7s;
+}
+
+.loading img {
+    width: 33%;
+    margin: 50% auto 0;
+    display: block;
+}
+
+.loading .progress {
+    width: 85%;
+    height: 3px;
+    margin: 3% auto 0;
+    background-color: #ccc;
+    border-radius: 2px;
+}
+
+.loading .progress div {
+    width: 100%;
+    height: 100%;
+    background-color: #ce0027;
+    -webkit-animation: loading 7s linear forwards;
+    animation: loading 7s linear forwards;
+}
+
+@-webkit-keyframes loading {
+    0% {
+        width: 0;
+    }
+    20% {
+        width: 15%;
+    }
+    23% {
+        width: 15%;
+    }
+    28% {
+        width: 40%;
+    }
+    30% {
+        width: 40%;
+    }
+    95% {
+        width: 90%;
+    }
+    98% {
+        width: 90%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes loading {
+    0% {
+        width: 0;
+    }
+    20% {
+        width: 15%;
+    }
+    23% {
+        width: 15%;
+    }
+    28% {
+        width: 40%;
+    }
+    30% {
+        width: 40%;
+    }
+    95% {
+        width: 90%;
+    }
+    98% {
+        width: 90%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+@-webkit-keyframes loadOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes loadOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+
+/*音乐*/
+
+#music {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.music_btn {
+    display: none;
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    top: 5%;
+    right: 3%;
+    z-index: 9999999;
+    opacity: 0.5;
+}
+
+.music_btn img {
+    width: 100%;
+    height: 100%;
+}
+
+.music_on s {
+    display: block;
+    width: 9px;
+    height: 13px;
+    background: url(../images/icon_music.png) no-repeat scroll top left;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.music_on s:nth-child(1) {
+    -webkit-animation: music1 2s infinite;
+    animation: music1 2s infinite;
+}
+
+.music_on s:nth-child(2) {
+    transform: rotate(30deg);
+    -webkit-transform: rotate(30deg);
+    -webkit-animation: music2 2s 1s infinite;
+    animation: music2 2s 0.5s infinite;
+}
+
+.music_on s:nth-child(3) {
+    transform: rotate(50deg);
+    -webkit-transform: rotate(50deg);
+    -webkit-animation: music3 2s 1.5s infinite;
+    animation: music3 2s 1.5s infinite;
+}
+
+@-webkit-keyframes music1 {
+    0% {
+        top: 0;
+        left: 0;
+        opacity: 0;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        top: -15px;
+        left: -15px;
+        opacity: 0;
+    }
+}
+
+@keyframes music1 {
+    0% {
+        top: 0;
+        left: 0;
+        opacity: 0;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        top: -15px;
+        left: -15px;
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes music2 {
+    0% {
+        top: 0;
+        left: 0;
+        opacity: 0;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        top: -20px;
+        left: -8px;
+        opacity: 0;
+    }
+}
+
+@keyframes music2 {
+    0% {
+        top: 0;
+        left: 0;
+        opacity: 0;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        top: -20px;
+        left: -8px;
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes music3 {
+    0% {
+        top: 0;
+        left: 0;
+        opacity: 0;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        top: -30px;
+        left: 2px;
+        opacity: 0;
+    }
+}
+
+@keyframes music3 {
+    0% {
+        top: 0;
+        left: 0;
+        opacity: 0;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        top: -30px;
+        left: 2px;
+        opacity: 0;
+    }
+}
