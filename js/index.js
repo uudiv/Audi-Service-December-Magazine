@@ -9,32 +9,32 @@ $(function() {
 	}
 	audioAutoPlay('musicStar');*/
 	//音乐
-//	var pauseMark = true;
-//	$(".music_btn").click(function() {
-//		if(pauseMark) {
-//			pauseMark = false;
-//			$(this).children('img').attr('src', 'images/music_off.png');
-//			$(this).removeClass('music_on');
-//			$("#music")[0].pause();
-//		} else {
-//			$(this).children('img').attr('src', 'images/music_on.png');
-//			$(this).addClass('music_on');
-//			$("#music")[0].play();
-//			pauseMark = true;
-//		}
-//	});
-//
-//	function audioAutoPlay(id) {
-//		var audio = document.getElementById(id);
-//		audio.play();
-//		document.addEventListener("WeixinJSBridgeReady", function() {
-//			if(pauseMark) {
-//				audio.play();
-//			}
-//		}, false);
-//	}
-//	audioAutoPlay('music');
-	
+	var pauseMark = true;
+	$(".music_btn").click(function() {
+		if(pauseMark) {
+			pauseMark = false;
+			$(this).children('img').attr('src', 'images/music_off.png');
+			$(this).removeClass('music_on');
+			$("#music")[0].pause();
+		} else {
+			$(this).children('img').attr('src', 'images/music_on.png');
+			$(this).addClass('music_on');
+			$("#music")[0].play();
+			pauseMark = true;
+		}
+	});
+
+	function audioAutoPlay(id) {
+		var audio = document.getElementById(id);
+		audio.play();
+		document.addEventListener("WeixinJSBridgeReady", function() {
+			if(pauseMark) {
+				audio.play();
+			}
+		}, false);
+	}
+	audioAutoPlay('music');
+
 	//loading页面加载结束
 	$('.loading').on('animationend', function() {
 		$(this).fadeOut();
@@ -74,6 +74,32 @@ $(function() {
 		indicators: false, //是否显示滚动条
 		deceleration: 0.0006, //阻尼系数,系数越小滑动越灵敏
 		bounce: true //是否启用回弹
+	})
+
+	//目录跳转
+	$('.screen1').on('click', function() {
+		mySwiper.slideTo(1);
+	})
+	$('.mulu li:nth-of-type(1)').on('click', function() {
+		mySwiper.slideTo(3);
+	})
+	$('.mulu li:nth-of-type(2)').on('click', function() {
+		mySwiper.slideTo(4);
+	})
+	$('.mulu li:nth-of-type(3)').on('click', function() {
+		mySwiper.slideTo(5);
+	})
+	$('.mulu li:nth-of-type(4)').on('click', function() {
+		mySwiper.slideTo(6);
+	})
+	$('.mulu li:nth-of-type(5)').on('click', function() {
+		mySwiper.slideTo(8);
+	})
+	$('.mulu li:nth-of-type(6)').on('click', function() {
+		mySwiper.slideTo(11);
+	})
+	$('.mulu li:nth-of-type(7)').on('click', function() {
+		mySwiper.slideTo(12);
 	})
 
 })

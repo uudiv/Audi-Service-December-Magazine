@@ -18,17 +18,17 @@
 
 	<body>
 		<!--音乐-->
-		<!--<audio src="images/music.mp3" loop="loop" style="display: none;" id="music"></audio>
-		<a class="music_btn music_on"><img src="images/music_on.png" /><s></s><s></s><s></s></a>-->
+		<audio src="images/music.mp3" loop="loop" style="display: none;" id="music"></audio>
+		<a class="music_btn music_on"><img src="images/music_on.png" /><s></s><s></s><s></s></a>
 
 		<div class="h5_container">
 			<!--加载动画-->
-			<!--<div class="loading">
+			<div class="loading">
 				<img src="images/loading_logo.png" />
 				<div class="progress">
 					<div></div>
 				</div>
-			</div>-->
+			</div>
 
 			<!--swiper-->
 			<div class="swiper-container">
@@ -41,10 +41,10 @@
 								<div class="tu1">
 									<img src="images/01_tu1.jpg" />
 								</div>
-								<div class="tu2">
+								<div class="tu2 ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="7s">
 									<img src="images/01_tu2.png" />
 								</div>
-								<div class="tu3">
+								<div class="tu3 ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay="8s">
 									<img src="images/01_tu3.png" />
 								</div>
 								<div class="tu4">
@@ -61,7 +61,7 @@
 							<div class="mui-scroll">
 								<div class="bg_color"></div>
 								<div class="tu">
-									<img src="images/02_tu1.png" class="tu1" />
+									<img src="images/02_tu1.png" class="tu1 ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay="0s"/>
 									<img src="images/02_tu2.png" class="tu2" />
 									<img src="images/02_tu3.png" class="tu3" />
 									<img src="images/02_tu4.jpg" class="tu4" />
@@ -75,7 +75,7 @@
 								<div class="tu1">
 									<img src="images/03_tu1.jpg" />
 								</div>
-								<div class="tu2">
+								<div class="tu2 ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="0s">
 									<img src="images/03_tu2.png" />
 								</div>
 								<div class="mulu">
@@ -111,7 +111,7 @@
 							<div class="mui-scroll">
 								<div class="tu1">
 									<img src="images/04_tu1.jpg" class="tu1_1" />
-									<img src="images/04_tu2.png" class="tu1_2" />
+									<img src="images/04_tu2.png" class="tu1_2 ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="0s"/>
 								</div>
 								<br /><br /><br />
 								<div class="text">
@@ -135,7 +135,7 @@
 							<div class="mui-scroll">
 								<div class="tu1">
 									<img src="images/05_tu1.jpg" />
-									<div class="wz">
+									<div class="wz ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="0s">
 										Service Data
 									</div>
 								</div>
@@ -167,7 +167,7 @@
 								<div class="tu1">
 									<img src="images/06_tu1.jpg" />
 								</div>
-								<div class="wz1">
+								<div class="wz1 ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="0s">
 									<img src="images/06_title.jpg" class="page_title_tu" />
 									<div class="text2">
 										Dealer <br /> Performance
@@ -240,7 +240,7 @@
 							<div class="mui-scroll">
 								<div class="tu1">
 									<img src="images/07_tu1.jpg" />
-									<div class="wz">
+									<div class="wz ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="0s">
 										<img src="images/07_title.jpg" class="page_title_tu" />
 										<div class="text2">
 											Service Elite
@@ -309,7 +309,7 @@
 							<div class="mui-scroll">
 								<div class="tu1">
 									<img src="images/08_tu1.jpg" />
-									<div class="wz">
+									<div class="wz ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="0s">
 										<img src="images/07_title.jpg" class="page_title_tu" />
 										<div class="text2">
 											Service Elite
@@ -386,7 +386,7 @@
 							<div class="mui-scroll">
 								<div class="tu1">
 									<img src="images/09_tu1.jpg" />
-									<div class="wz">
+									<div class="wz ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="0s">
 										<img src="images/09_title.jpg" class="page_title_tu" />
 										<div class="text2">
 											Car Owner Story
@@ -455,7 +455,7 @@
 							<div class="mui-scroll">
 								<div class="tu1">
 									<img src="images/10_tu1.jpg" />
-									<div class="wz">
+									<div class="wz ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="0s">
 										<img src="images/09_title.jpg" class="page_title_tu" />
 										<div class="text2">
 											Car Owner Story
@@ -525,7 +525,7 @@
 							<div class="mui-scroll">
 								<div class="tu1">
 									<img src="images/11_tu1.jpg" />
-									<div class="wz">
+									<div class="wz ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="0s">
 										<img src="images/09_title.jpg" class="page_title_tu" />
 										<div class="text2">
 											Car Owner Story
@@ -589,14 +589,135 @@
 					<div class="swiper-slide screen12">
 						<div class="mui-scroll-wrapper">
 							<div class="mui-scroll">
-								4
+								<div class="tu1">
+									<img src="images/12_tu1.jpg" />
+								</div>
+								<br /><br />
+								<div class="wz1 ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay="0s">
+									<img src="images/12_title.jpg" class="page_title_tu" />
+									<div class="text2">
+										Vocational<br /> School
+									</div>
+									<div class="text3">
+										进取之路，共赢未来
+									</div>
+								</div>
+								<br /><br />
+								<div class="text text-color1">
+									<p>在奥迪“卓·悦”服务战略的引领下，一汽-大众奥迪不仅不遗余力地为用户提供着卓越的服务体验，在售后服务人才的培养上也是投入了大量精力和心血。校企合作在奥迪服务人才培养体系中就扮演着重要的角色。</p>
+								</div>
+								<br />
+								<div class="tu2">
+									<img src="images/12_tu2.jpg" />
+								</div>
+								<br /><br /><br />
+								<div class="text">
+									<p>2013年8月，一汽-大众奥迪销售事业部正式对外发布校企合作项目——奥迪职业学校。经过5年的发展，一汽-大众奥迪已经与全国15所职业院校开展了深度合作，并与另外2所院校开展合作洽谈。目前，该项目已累计投入近3 000万元的资金。</p>
+									<p>对比以往的传统教育模式，奥迪职业学校项目采用的是先进的德国职业教育培训模式，为学生提供最专业的技术经验与实践平台，将奥迪专属的定制化课程融入到教学中，让学生从被动学习转换为主动学习。</p>
+									<p>一汽-大众奥迪校企合作项目定制化课程包含机电维修、钣喷、服务等多个专业，每位进入奥迪班的教师必须经过奥迪售后培训部的层层选拔，并参加奥迪售后培训部组织的各类培训及认证。在教学中，一汽-大众奥迪为合作院校提供先进的车型以及检测、保养、维修等专用工具，确保教学质量，实现学生学习与就业的无缝对接。项目开展至今，已有近千名奥迪班毕业学员进入到129家奥迪经销商工作。</p>
+									<p>一汽-大众奥迪将30年积累的高档车生产、制造、服务经验，输入到中国职业教育当中，为职业院校开辟了新的培养方式，并带来了更先进的培养理念。作为国家级改革发展示范校，山东德州汽车摩托车专修学院也是首批与一汽-大众奥迪签订合作协议的院校之一，就让我们透过它和一汽-大众奥迪合作办学的故事，感受奥迪职业学校的独特之处。</p>
+								</div>
+								<br /><br /><br />
+								<div class="tu3">
+									<img src="images/12_tu3.jpg" />
+								</div>
+								<br /><br /><br />
+								<div class="text4">
+									专业师资认证，打造教育新模式
+								</div>
+								<div class="text">
+									<p>作为汽修强校，山东德州汽车摩托车专修学院受到众多车企的青睐，但据该院奥迪班专任教师张骞介绍，相比其他汽车品牌的合作，一汽-大众奥迪提供的专业教材、教具最全，而且对教师的培养投入也相对比较大。每位进入此项目的教师都要经过基础培训和认证，这是能进入奥迪班教学的必要条件。通过基础培训认证后，还有高级培训认证及奥迪培训师培训和认证的进阶。</p>
+									<p>奥迪培训师的培训课程让张骞在教学方式上有了新的转变，不再像从前使用“填鸭式”的教学方式，而是让学生从被动学习转为主动参与。教师只需要把握好授课的流程和课堂知识点，在学生出现困难时及时指导，最终引导学生成为学习的主体。这样的培养方式，使在奥迪班毕业的每位学生进入奥迪经销商后，不再需要专门进行基础培训，立即就能为用户提供标准服务。</p>
+								</div>
+								<br /><br /><br />
+								<div class="tu4">
+									<img src="images/12_tu4.jpg" />
+								</div>
+								<br /><br /><br />
+								<div class="text4">
+									小班制教学，培养卓·悦人才
+								</div>
+								<div class="text">
+									<p>学习的最高境界便是能够解决工作中的实际问题。奥迪职业学校采用小班制教学，运用一些特殊的教学方法，比如头脑风暴、餐桌法等，加强学生互动，最终就是为了能够让学生在实际工作中将所学知识灵活应用。此外，奥迪班每个阶段的课程培养都依靠科学有效的教学方式，引导学生在课堂上完成每次的学习活动和任务，自我学习和互动学习兼顾，让每位学员都能轻松达成学习目标。目前，山东德州汽车摩托车专修学院奥迪班开设了机电、钣金与喷漆专业，服务专业也正在筹备阶段。该院依据奥迪职业学校项目运营标准，每年从学校汽车相关专业选拔学生组建奥迪班，每个奥迪机电维修班30人、奥迪钣喷维修班20人。除了奥迪班共有的教学特色外，山东德州汽车摩托车专修学院奥迪班还开发了课后测试移动平台，确保学生后期复习能够扎实掌握所学知识。</p>
+								</div>
+								<br /><br /><br />
+								<div class="tu5">
+									<img src="images/12_tu5.jpg" />
+								</div>
+								<br /><br /><br />
+								<div class="text">
+									<p>赵帅胜是山东德州汽车摩托车专修学院奥迪班的一名优秀毕业生，现如今他已经是北京华阳奥通的机电车间班组长。奥迪班的学习经历使他获得了奥迪最系统的理论基础知识并熟练掌握了最专业的维修操作流程。令他最难忘的是在校时对电路图的学习，系统的学习方式让他能够很快看懂所有奥迪车型的电路图。在理论的基础上，老师还会亲自带学生们一一实践，比如制造线路故障，让学员们亲自检测原因、动手解除故障等。这种情景模拟的教学方式，让他对学习产生了极大的兴趣。熟练的“读图”技能对他现在的实际工作有着巨大的帮助。</p>
+								</div>
+								<br /><br /><br />
+								<div class="text text-color1">
+									<p>一直以来，一汽-大众奥迪无论是产品竞争力、市场销量还是用户满意度，都始终引领着中国高档豪华车市场的发展。而奥迪职业学校亦是一汽-大众奥迪在教育领域做出的新探索和贡献，其为奥迪经销商提供了业内一流的售后技术人才，从而为奥迪用户带去更为愉悦的服务。同时，奥迪职业学校项目更促进了国内职业教育的发展，成为了中国汽车服务人才培养的新标杆。</p>
+								</div>
+								<br /><br /><br />
 							</div>
 						</div>
 					</div>
 					<div class="swiper-slide screen13">
 						<div class="mui-scroll-wrapper">
 							<div class="mui-scroll">
-								4
+								<div class="tu1">
+									<img src="images/13_tu1.jpg" />
+								</div>
+								<br /><br />
+								<div class="text text-color1">
+									<p>如果您仔细阅读过本期内容，不妨试着回答下面几道问题。扫一扫本页左下角二维码，关注“一汽大众奥迪服务”官方订阅号，在“卓悦相伴”菜单栏中阅读本期杂志在线版进行答题，或按照“答案+ 姓名+ 联系电话+ 通讯地址”的形式回复邮件至magazine_asd@sina.com（邮件请注明30周年特刊有奖问答）。我们将从全部答对的读者中抽取20位幸运读者，送出由一汽-大众奥迪提供的精美礼品1份( 奥迪Q5L原厂车模1台）。</p>
+								</div>
+								<br /><br />
+								<div class="xzt">
+									<h4>1.	2018年，奥迪品牌进入中国多少年？ </h4>
+									<ul>
+										<li>A. 15</li>
+										<li>B. 20</li>
+										<li>C. 25</li>
+										<li>D. 30</li>
+									</ul>
+									<h4>2.	以下关于奥迪“卓·悦”服务，描述错误的是 </h4>
+									<ul>
+										<li>A. 它是奥迪全球化服务新战略</li>
+										<li>B. Audi Top Service，即奥迪“卓·悦”服务</li>
+										<li>C. 2018年，奥迪“卓·悦”服务战略实施</li>
+										<li>D. 奥迪“卓·悦”服务战略的实施喻示着奥迪服务在中国市 场的一次全方位升级</li>
+									</ul>
+									<h4>3.	以下关于一汽-大众奥迪的专用工具与设备，描述正确的是</h4>
+									<ul>
+										<li>A. 标配奥迪车型专用工具1 000余种，先进设备30余种</li>
+										<li>B. 标配奥迪车型专用工具800余种，先进设备10余种</li>
+										<li>C. 标配奥迪车型专用工具1 000余种，先进设备10余种</li>
+										<li>D. 标配奥迪车型专用工具800余种，先进设备30余种</li>
+									</ul>
+									<h4>4.	以下关于奥迪季节服务活动，描述正确的是 </h4>
+									<ul>
+										<li>A. 2001年，一汽-大众奥迪在国内率先提出“假日服务活动”概念，后逐渐转变为“季节服务活动”</li>
+										<li>B. 2001年，一汽-大众奥迪在国内率先提出“季节服务活动”概念，后逐渐转变为“假日服务活动”</li>
+										<li>C. 2008年，一汽-大众奥迪在国内率先提出“假日服务活动”概念，后逐渐转变为“季节服务活动”</li>
+										<li>D. 2008年，一汽-大众奥迪在国内率先提出“季节服务活动”概念，后逐渐转变为“假日服务活动”</li>
+									</ul>
+									<h4>5.	以下关于奥迪专业双杯竞赛，描述错误的是</h4>
+									<ul>
+										<li>A. 奥迪专业双杯竞赛在全球同步举行</li>
+										<li>B. 2008年，奥迪专业双杯竞赛引入中国</li>
+										<li>C. 奥迪专业双杯竞赛是由“奥迪服务杯” 和“奥迪技术杯”共同组成的</li>
+										<li>D. 奥迪专业双杯竞赛旨在帮助一汽-大众奥迪特许经销商提 升整体服务能力</li>
+									</ul>
+								</div>
+								<br />
+								<div class="tu2">
+									<img src="images/13_tu2.jpg" />
+								</div>
+								<br /><br /><br />
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide screen14">
+						<div class="mui-scroll-wrapper">
+							<div class="mui-scroll">
+								<div class="tu1">
+									<img src="images/14_tu1.jpg" />
+								</div>
 							</div>
 						</div>
 					</div>
