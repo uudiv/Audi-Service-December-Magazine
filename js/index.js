@@ -102,4 +102,33 @@ $(function() {
 		mySwiper.slideTo(12);
 	})
 
+	//选择题
+	$('.xzt ul').each(function(index, item) {
+		$(item).children('li').on('click', function() {
+			$(this).css('color', '#d00e31').siblings().css('color', '#000000');
+			$(this).parent('ul').attr('data-num', $(this).attr('data-num'));
+		});
+	});
+
+	//提交答案
+	$('.xzt .tijiao span').on('click', function() {
+		var name = $('#name').val()
+		var tel = $('#tel').val()
+		var dataArr = [];
+
+		$('.xzt ul').each(function(index, item) {
+			if(!$(item).attr('data-num')) {
+				return false
+			}
+			dataArr.push($(item).attr('data-num'));
+		});
+
+		if(dataArr.length != 5 || !name || !tel) {
+			mui.alert('请填写完整信息');
+			return false
+		}
+
+		mui.alert('提交成功');
+	});
+
 })
