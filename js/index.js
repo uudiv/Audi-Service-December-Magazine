@@ -36,9 +36,10 @@ $(function() {
 	audioAutoPlay('music');
 
 	//loading页面加载结束
-	$('.loading').on('animationend', function() {
-		$(this).fadeOut();
+	$('.loading .progress div').on('animationend', function() {
+		$('.loading').fadeOut();
 		$('.music_btn').fadeIn();
+		$('.screen1 .box').fadeIn()
 	});
 
 	//swiper-container
@@ -127,6 +128,10 @@ $(function() {
 			mui.alert('请填写完整信息');
 			return false
 		}
+
+		console.log(dataArr)
+		console.log(name)
+		console.log(tel)
 
 		mui.alert('提交成功');
 	});

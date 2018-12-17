@@ -1,4 +1,7 @@
 .screen1 {
+    .box {
+        display: none;
+    }
     .tu1 {
         width: 100%;
     }
@@ -20,7 +23,6 @@
         top: 820rem/@baseFontSize;
         left: 268rem/@baseFontSize;
         animation: loadOut 1s linear 5 alternate forwards;
-        animation-delay: 8s;
     }
     .fh {
         width: 60rem/@baseFontSize;
@@ -36,7 +38,6 @@
         color: #fff;
         font-size: 18rem/@baseFontSize;
         animation: loadOut 1s linear 5 alternate forwards;
-        animation-delay: 8s;
     }
 }
 
@@ -488,11 +489,7 @@
     left: 0;
     right: 0;
     margin: 0 auto;
-    z-index: 99999999999999;
-    -webkit-animation: loadOut 1s linear forwards;
-    animation: loadOut 1s linear forwards;
-    -webkit-animation-delay: 7s;
-    animation-delay: 7s;
+    z-index: 9999999;
 }
 
 .loading img {
