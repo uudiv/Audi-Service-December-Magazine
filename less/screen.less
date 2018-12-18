@@ -44,6 +44,16 @@
 
 /*------------------------------*/
 
+@keyframes screen2_downScroll {
+    from {
+        opacity: 0.3;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 .screen2 {
     background-color: #d00e31;
     .bg_color {
@@ -67,6 +77,16 @@
             margin-top: 46rem/@baseFontSize;
         }
         .tu4 {}
+    }
+    .downScroll {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        color: #fff;
+        z-index: 999;
+        font-size: 36px;
+        margin-left: -19px;
+        animation: screen2_downScroll 1s linear infinite alternate;
     }
 }
 
